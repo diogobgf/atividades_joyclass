@@ -5,7 +5,6 @@ const prompt = require('prompt-sync')({sigint: true});
 numero1 = parseInt(prompt("Digite o primeiro numero: "));
 numero2 = parseInt(prompt("Digite o segundo numero: "));
 
-
 while (numero1 >= 0){
 operador = prompt("Digite um operador da sua calculadora (+, - , x ou /): ");
 
