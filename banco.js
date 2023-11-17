@@ -3,12 +3,12 @@
 const prompt = require('prompt-sync')({sigint: true});
 
 const banco = {
-    conta: 85682596,
+    conta: ("85682596-8"),
     saldo: 2000.00,
     tipo: "Paupança",
     agencia: 2589,
-    numAgencia: function () {
-        console.log(`Agência: ${banco.agencia}`);
+    numConta: function () {
+        console.log(`Conta: ${banco.conta}`);
     },
 
     buscarSaldo: function () {
@@ -38,7 +38,7 @@ const banco = {
     }    
 }
 
-    banco.numAgencia();
+    banco.numConta();
     console.log("");
 
     banco.buscarSaldo();
