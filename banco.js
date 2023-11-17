@@ -18,11 +18,16 @@ const banco = {
         
         if(opcao === 1){
             let saque = parseFloat(prompt("Digite o Valor do Saque: "));  
-            
+
             console.log("");
-            console.log (`Valor Sacado: $R ${saque.toFixed(2)}`);
-            banco.saldo = banco.saldo - saque;
-            console.log (`Saldo atualizado: $R ${banco.saldo.toFixed(2)}`);
+            
+            if (saque > banco.saldo){
+                console.log("Saldo Insuficiente");
+            }else{
+                console.log (`Valor Sacado: $R ${saque.toFixed(2)}`);
+                banco.saldo = banco.saldo - saque;
+                console.log (`Saldo atualizado: $R ${banco.saldo.toFixed(2)}`);
+            }
                 
         }else if (opcao === 2){
             let deposito = parseFloat(prompt("Digite o Valor do Deposito: "));
@@ -38,6 +43,7 @@ const banco = {
     }    
 }
 
+    console.log("");
     banco.numConta();
     console.log("");
 
