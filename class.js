@@ -5,17 +5,20 @@ class Carro {
         this.marca = marca;
         this.modelo = modelo;
         this.ano = ano;
-        this
+        this._aceleraracelerar = true;
+        this._aceleraracelerarfreiar = false
+        this._aceleraracelerarestacionar = false
 
         acelerar (){
-            
+            console.log("Carro Acelera");
         };
 
         #privateFreiar(){
-
+            console.log("Carro Freiar");
         };
 
         #privateEstacionar(){
+            console.log("Carro Estacionar");
 
         };
 
