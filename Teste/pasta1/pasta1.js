@@ -1,0 +1,1 @@
+console.log("Pasta1 teste");
