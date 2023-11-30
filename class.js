@@ -5,10 +5,21 @@ class Carro {
         this.marca = marca;
         this.modelo = modelo;
         this.ano = ano;
+        this
 
         acelerar (){
             
-        }
+        };
+
+        #privateFreiar(){
+
+        };
+
+        #privateEstacionar(){
+
+        };
+
+
      }
 
      
