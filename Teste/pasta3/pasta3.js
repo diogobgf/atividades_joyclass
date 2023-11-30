@@ -1,1 +1,0 @@
-console.log("Pasta3 teste");
